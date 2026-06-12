@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 const VARIANT_STYLES = {
   default: "border-border-subtle bg-surface",
   accent: "border-accent/30 bg-accent/[0.04]",
+  muted: "border-dashed border-border-subtle bg-foreground/[0.02]",
 };
 
 export function CalloutPanel({

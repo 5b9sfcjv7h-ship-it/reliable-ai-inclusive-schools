@@ -42,7 +42,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20">
+      <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Status of content" title="How to read this hub" />
           <p className="mt-6 text-base leading-relaxed text-muted">
@@ -53,6 +53,32 @@ export default function AboutPage() {
             <span className="text-foreground">publishable</span> — to indicate
             how settled it is. Draft and developing material reflects active
             thinking and may change significantly as the research progresses.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <SectionHeader
+            eyebrow="Workspace vs. Hub"
+            title="A private research workspace, for now"
+          />
+          <p className="mt-6 text-base leading-relaxed text-muted">
+            This site is currently a private research workspace. It exists so
+            that the structure of the research — problem framing, literature,
+            frameworks, workflows, and field notes — can be drafted, tested,
+            and revised in one place as the project develops. Most of what
+            appears here is provisional, and some material is recorded only
+            for internal use during the pilot.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-muted">
+            A future public-facing version of this hub is intended to present
+            a curated subset of this work — material marked{" "}
+            <span className="text-foreground">integrated</span> or{" "}
+            <span className="text-foreground">publishable</span>, rewritten
+            for an external audience, with all private and draft content
+            removed. Until that version exists, nothing on this site should
+            be treated as a finished or institutionally endorsed output.
           </p>
           <div className="mt-10">
             <SafetyNotice />
