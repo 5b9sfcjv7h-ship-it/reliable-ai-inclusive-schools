@@ -74,7 +74,7 @@ export const frameworks: Framework[] = [
     description:
       "Systematic processes for checking that outputs and practices meet defined standards before they are used, including review, verification, and sign-off steps.",
     relevance:
-      "Underpins the AI output quality assurance workflow — every AI-generated artefact passes through a defined human review step before classroom use.",
+      "Underpins the AI output quality assurance workflow. Every AI-generated artefact passes through a defined human review step before classroom use.",
     tags: ["quality assurance", "verification", "professional judgement"],
     status: "developing",
   },

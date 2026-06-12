@@ -26,7 +26,7 @@ export const workflows: Workflow[] = [
       {
         title: "Review against the success criteria",
         detail:
-          "Check each option against the original success criteria — reject any version that quietly lowers the cognitive demand of the task.",
+          "Check each option against the original success criteria. Reject any version that quietly lowers the cognitive demand of the task.",
       },
       {
         title: "Adjust and finalise with professional judgement",
@@ -137,7 +137,7 @@ export const workflows: Workflow[] = [
       {
         title: "Check factual accuracy",
         detail:
-          "Verify any factual claims, citations, names, or figures against a trusted source — do not assume AI output is correct by default.",
+          "Verify any factual claims, citations, names, or figures against a trusted source. Do not assume AI output is correct by default.",
       },
       {
         title: "Check curriculum alignment",

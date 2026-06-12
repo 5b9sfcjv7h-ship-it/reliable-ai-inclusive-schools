@@ -12,7 +12,7 @@ const PROBLEM_CARDS = [
   {
     title: "Inequity",
     description:
-      "Without an inclusion lens, AI-assisted adaptations risk widening — rather than closing — gaps for students with additional needs.",
+      "Without an inclusion lens, AI-assisted adaptations risk widening the gaps for students with additional needs instead of closing them.",
   },
   {
     title: "Governance Gap",
@@ -114,12 +114,14 @@ export default function Home() {
           </p>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
             Generative AI is already part of everyday school life, but mostly
-            as an individual habit rather than a professional practice. This
-            research treats that gap as the starting point: it traces what
-            changes when AI use moves from informal, unreviewed habit toward
-            workflows that are structured, quality-assured, and explicitly
-            evaluated for whether they support — or undermine — inclusive
-            teaching.
+            as an individual habit rather than a professional practice. That
+            gap carries a cost: time spent reworking unreliable output,
+            inconsistent quality across classrooms, and decisions about
+            students made without a clear record of how AI was involved. This
+            research starts from that gap. It sets out what changes when AI
+            use moves from informal habit toward workflows that are
+            structured, quality-assured, and tested against whether they
+            support inclusive teaching.
           </p>
         </div>
       </section>
@@ -144,7 +146,7 @@ export default function Home() {
           <SectionHeader
             eyebrow="Research Logic"
             title="From casual use to reliable implementation"
-            description="The hub is organised around this progression — each stage builds on the one before it, rather than replacing it."
+            description="The hub is organised around this progression. Each stage builds on the one before it, rather than replacing it."
           />
           <ol className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border-subtle bg-border-subtle sm:grid-cols-5">
             {LOGIC_STEPS.map((step, i) => (

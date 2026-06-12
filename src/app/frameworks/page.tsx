@@ -8,7 +8,7 @@ export default function FrameworksPage() {
       <Hero
         eyebrow="Frameworks"
         title="The frameworks used to evaluate AI-supported practice"
-        subtitle="Each framework offers a different lens — pedagogical, technical, systemic, or methodological — for judging whether an AI-supported workflow represents genuine progress."
+        subtitle="Each framework offers a different lens, pedagogical, technical, systemic, or methodological, for judging whether an AI-supported workflow represents genuine progress."
       />
 
       <section className="py-16 sm:py-20">

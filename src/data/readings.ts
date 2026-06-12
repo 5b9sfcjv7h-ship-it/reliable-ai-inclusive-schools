@@ -24,7 +24,7 @@ export const readings: Reading[] = [
     summary:
       "Foundational synthesis describing the stages and drivers of implementation science, including exploration, installation, initial implementation, and full implementation.",
     relevance:
-      "Frames why a single successful AI demo lesson does not equal reliable practice — adoption requires staged implementation supports, not just access to a tool.",
+      "Frames why a single successful AI demo lesson does not equal reliable practice. Adoption requires staged implementation support, not just access to a tool.",
     tags: ["implementation science", "fidelity", "school systems"],
     status: "integrated",
     visibility: "public-safe",

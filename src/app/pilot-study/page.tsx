@@ -6,25 +6,25 @@ import { SafetyNotice } from "@/components/SafetyNotice";
 
 const PHASES = [
   {
-    title: "Phase 1 — Baseline and design",
+    title: "Phase 1: Baseline and design",
     description:
       "Map current casual AI use, confirm the workflows to be trialled, and finalise privacy and risk-checking guidance.",
     status: "developing" as const,
   },
   {
-    title: "Phase 2 — Small-group trial",
+    title: "Phase 2: Small-group trial",
     description:
       "A small group of volunteer staff trial selected workflows in their own planning, with structured reflection after each use.",
     status: "draft" as const,
   },
   {
-    title: "Phase 3 — Review and revision",
+    title: "Phase 3: Review and revision",
     description:
       "Workflows are revised based on trial feedback and field notes, with particular attention to inclusion and quality assurance steps.",
     status: "draft" as const,
   },
   {
-    title: "Phase 4 — Wider trial and write-up",
+    title: "Phase 4: Wider trial and write-up",
     description:
       "Revised workflows are trialled more widely, and findings are written up for school leaders and the broader research community.",
     status: "draft" as const,
@@ -54,10 +54,10 @@ export default function PilotStudyPage() {
             in short cycles: a workflow is drafted, a small number of staff
             trial it in an authentic planning context, observations are
             recorded as field notes, and the workflow is revised before the
-            next cycle. This approach is suited to a problem where the right
-            level of structure — enough to support quality and inclusion,
-            without adding unsustainable overhead — is not yet known and needs
-            to be discovered through use.
+            next cycle. This approach suits a problem where the right level
+            of structure is not yet known and needs to be discovered through
+            use: enough to support quality and inclusion, without adding
+            workload that staff cannot sustain.
           </p>
         </div>
       </section>

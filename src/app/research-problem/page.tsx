@@ -20,10 +20,11 @@ export default function ResearchProblemPage() {
             support staff use general-purpose chat tools to draft resources,
             plan lessons, or generate ideas, often without a shared workflow,
             a quality check, or any record of what was produced and how it was
-            verified. This casual use is understandable — the tools are
-            accessible and immediately useful — but it leaves schools with no
-            consistent basis for judging whether AI-supported work meets the
-            standards expected of professional practice.
+            verified. This is an understandable response to genuinely useful,
+            accessible tools. But it leaves schools with no consistent basis
+            for judging whether AI-assisted work meets the standards expected
+            of professional practice, and no way to account for that work if
+            it is ever questioned.
           </p>
         </div>
       </section>
@@ -34,10 +35,11 @@ export default function ResearchProblemPage() {
           <p className="mt-6 text-base leading-relaxed text-muted">
             The window in which schools can shape how generative AI is used is
             narrow. Practice is forming quickly, often ahead of policy,
-            training, or shared standards. If reliable, inclusive workflows
-            are not articulated and trialled now, informal habits will harden
-            into default practice — including habits that may quietly
-            disadvantage students who are already at risk of being
+            training, or shared standards, and the habits formed now will be
+            costly to unwind later. If reliable, inclusive workflows are not
+            set out and trialled while practice is still forming, informal
+            habits will harden into default practice, including habits that
+            may quietly disadvantage students who are already at risk of being
             underserved by general-purpose tools and resources.
           </p>
         </div>
@@ -50,7 +52,7 @@ export default function ResearchProblemPage() {
             Inclusive education provides a demanding test for any new
             classroom technology: does it work for the full range of
             learners, including those with disability, additional learning
-            needs, or complex communication needs — or only for an assumed
+            needs, or complex communication needs, or only for an assumed
             "average" student? Frameworks such as Universal Design for
             Learning already give schools a vocabulary for evaluating
             curriculum design on this basis. Applying the same lens to
@@ -131,15 +133,18 @@ export default function ResearchProblemPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="07" title="Possible contribution" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            This research aims to contribute a small set of trialled,
-            documented workflows — covering curriculum adaptation, AAC
-            vocabulary planning, accessible resource review, AI output quality
-            assurance, and privacy and risk checking — together with an
-            account of how they were developed, what changed through trial and
-            revision, and what conditions supported or hindered adoption. The
-            intent is for this to be useful both as a practical resource for
-            schools and as a contribution to the wider conversation about
-            responsible AI adoption in education.
+            This research aims to produce a small set of trialled, documented
+            workflows covering curriculum adaptation, AAC vocabulary planning,
+            accessible resource review, AI output quality assurance, and
+            privacy and risk checking. Each comes with an account of how it
+            was developed, what changed through trial and revision, and what
+            it took to embed in practice, including the time, training, and
+            oversight required. For school leaders, that record is the basis
+            for a sound implementation decision: what a workflow costs to run,
+            what it returns in staff time and consistency, and what
+            governance needs to be in place before it is adopted. For the
+            wider field, it is intended as a grounded contribution to the
+            conversation about responsible AI adoption in education.
           </p>
         </div>
       </section>

@@ -28,7 +28,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "TPACK",
     definition:
-      "Technological Pedagogical Content Knowledge — a model describing the specialised knowledge teachers need to combine technology, pedagogy, and subject content effectively.",
+      "Technological Pedagogical Content Knowledge: a model describing the specialised knowledge teachers need to combine technology, pedagogy, and subject content effectively.",
     tags: ["frameworks", "teacher knowledge"],
   },
   {

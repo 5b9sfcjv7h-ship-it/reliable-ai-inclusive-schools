@@ -15,13 +15,13 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Purpose" title="Why this hub exists" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            This site exists to make a research process visible as it
-            develops — the problem framing, the literature and frameworks
-            being drawn on, the workflows being trialled, and the field notes
-            that inform revisions. It is intended to be useful to school
-            leaders and teachers thinking about AI adoption, to other
-            researchers working in this area, and as a foundation for future
-            consulting and professional learning work.
+            This site makes a research process visible as it develops: the
+            problem framing, the literature and frameworks being drawn on,
+            the workflows being trialled, and the field notes that inform
+            revisions. It is intended to be useful to school leaders and
+            teachers weighing up AI adoption, to other researchers working in
+            this area, and as a foundation for future advisory and
+            professional learning work with schools.
           </p>
         </div>
       </section>
@@ -33,11 +33,11 @@ export default function AboutPage() {
             The research follows a design-based research approach, working in
             cycles of design, trial, observation, and revision with
             participating schools and staff. It draws on established
-            frameworks — including Universal Design for Learning,
-            implementation science, TPACK, and SAMR — to keep the work
+            frameworks, including Universal Design for Learning,
+            implementation science, TPACK, and SAMR, to keep the work
             grounded in existing evidence about inclusive practice and
-            technology adoption, rather than treating AI as an unprecedented
-            problem.
+            technology adoption, rather than treating AI as a problem schools
+            have not faced before in some form.
           </p>
         </div>
       </section>
@@ -46,11 +46,11 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Status of content" title="How to read this hub" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            Content across this hub is marked with a status —{" "}
+            Content across this hub is marked with a status,{" "}
             <span className="text-foreground">draft</span>,{" "}
             <span className="text-foreground">developing</span>,{" "}
             <span className="text-foreground">integrated</span>, or{" "}
-            <span className="text-foreground">publishable</span> — to indicate
+            <span className="text-foreground">publishable</span>, to indicate
             how settled it is. Draft and developing material reflects active
             thinking and may change significantly as the research progresses.
           </p>
@@ -65,15 +65,15 @@ export default function AboutPage() {
           />
           <p className="mt-6 text-base leading-relaxed text-muted">
             This site is currently a private research workspace. It exists so
-            that the structure of the research — problem framing, literature,
-            frameworks, workflows, and field notes — can be drafted, tested,
+            that the structure of the research, problem framing, literature,
+            frameworks, workflows, and field notes, can be drafted, tested,
             and revised in one place as the project develops. Most of what
             appears here is provisional, and some material is recorded only
             for internal use during the pilot.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
             A future public-facing version of this hub is intended to present
-            a curated subset of this work — material marked{" "}
+            a curated subset of this work: material marked{" "}
             <span className="text-foreground">integrated</span> or{" "}
             <span className="text-foreground">publishable</span>, rewritten
             for an external audience, with all private and draft content
