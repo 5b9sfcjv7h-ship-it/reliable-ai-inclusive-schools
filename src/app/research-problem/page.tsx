@@ -31,7 +31,22 @@ export default function ResearchProblemPage() {
 
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <SectionHeader eyebrow="02" title="Why it matters now" />
+          <SectionHeader eyebrow="02" title="The implementation gap" />
+          <p className="mt-6 text-base leading-relaxed text-muted">
+            There is no shortage of responsible AI guidance. National
+            frameworks, government policy papers, and international guidelines
+            now set out principles for safe, ethical AI use in education.
+            What is missing is the layer in between: evidence and guidance on
+            how an ordinary school turns those principles into repeatable
+            teacher workflows, with the governance, quality assurance, and
+            inclusion checks built in. This research sits in that gap.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-b border-border-subtle py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <SectionHeader eyebrow="03" title="Why it matters now" />
           <p className="mt-6 text-base leading-relaxed text-muted">
             The window for shaping how generative AI is used in schools is
             narrow. Practice is forming quickly, often ahead of policy,
@@ -47,7 +62,7 @@ export default function ResearchProblemPage() {
 
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <SectionHeader eyebrow="03" title="Why inclusive education is the right lens" />
+          <SectionHeader eyebrow="04" title="Why inclusive education is the right lens" />
           <p className="mt-6 text-base leading-relaxed text-muted">
             Inclusive education sets a demanding test for any new classroom
             technology. Does it work for the full range of learners,
@@ -59,12 +74,40 @@ export default function ResearchProblemPage() {
             focus on real students and real barriers, not on the novelty of
             the technology.
           </p>
+          <p className="mt-6 text-base leading-relaxed text-muted">
+            Inclusive and special education are high-stakes settings for this
+            work. AI-generated resources, adjustments, communication
+            supports, reporting comments, planning documents, and curriculum
+            adaptations can directly affect students with disability, AAC
+            users, complex learners, and students working below age-level
+            curriculum. Errors or unchecked output in this context do not stay
+            minor. A governed workflow with a professional review step is not
+            an optional extra here. It is the baseline.
+          </p>
         </div>
       </section>
 
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-10">
-          <SectionHeader eyebrow="04" title="Working definitions" />
+          <SectionHeader eyebrow="05" title="A sharper question" />
+          <CalloutPanel title="Weak question">
+            "Can AI help teachers?" This framing treats AI as a generic
+            productivity tool and does not test whether the help is reliable,
+            inclusive, or safe to use with students.
+          </CalloutPanel>
+          <CalloutPanel title="Stronger question" variant="accent">
+            "What conditions make AI-supported inclusive practice reliable,
+            ethical, useful, and safe inside real schools?" This framing
+            treats reliability as something schools build through governance,
+            workflow design, and quality assurance, not something that comes
+            with the tool.
+          </CalloutPanel>
+        </div>
+      </section>
+
+      <section className="border-b border-border-subtle py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-6 space-y-10">
+          <SectionHeader eyebrow="06" title="Working definitions" />
           <CalloutPanel title="Casual AI use">
             Ad hoc, individual use of general-purpose generative AI tools for
             tasks like planning or drafting, without a shared workflow, review
@@ -83,7 +126,7 @@ export default function ResearchProblemPage() {
         <div className="mx-auto max-w-3xl px-6">
           <div className="grid gap-10 sm:grid-cols-2">
             <div>
-              <SectionHeader eyebrow="05" title="Risks" />
+              <SectionHeader eyebrow="07" title="Risks" />
               <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted">
                 <li>
                   Inconsistent or unverified AI output being used directly with
@@ -104,7 +147,7 @@ export default function ResearchProblemPage() {
               </ul>
             </div>
             <div>
-              <SectionHeader eyebrow="06" title="Opportunities" />
+              <SectionHeader eyebrow="08" title="Opportunities" />
               <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted">
                 <li>
                   Reducing the time cost of high-quality differentiation and
@@ -128,9 +171,24 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
+      <section className="border-b border-border-subtle py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <SectionHeader eyebrow="09" title="Scope of this first phase" />
+          <p className="mt-6 text-base leading-relaxed text-muted">
+            The first version of this work focuses on teacher-facing AI use:
+            staff using AI tools to prepare resources, adaptations,
+            communication supports, and planning or reporting drafts, with a
+            professional review step before anything reaches a student. It
+            does not cover students directly using open-ended generative AI
+            tools. That is a distinct question, with its own risk profile, and
+            sits outside the scope of this phase.
+          </p>
+        </div>
+      </section>
+
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <SectionHeader eyebrow="07" title="Possible contribution" />
+          <SectionHeader eyebrow="10" title="Possible contribution" />
           <p className="mt-6 text-base leading-relaxed text-muted">
             This research aims to produce a small set of tested, documented
             workflows covering curriculum adaptation, AAC vocabulary planning,

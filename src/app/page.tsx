@@ -23,11 +23,15 @@ const PROBLEM_CARDS = [
 
 const LOGIC_STEPS = [
   {
-    title: "Casual Use",
-    description: "Individual, informal use with no shared workflow or review.",
+    title: "Responsible AI Principles",
+    description: "National and international guidance on safe, ethical, and responsible AI use.",
   },
   {
-    title: "Structured Workflows",
+    title: "School Governance",
+    description: "Local policy, approved tools, privacy rules, and risk settings that apply those principles in a school.",
+  },
+  {
+    title: "Teacher Workflows",
     description: "Defined steps for common tasks, with a clear point of professional review.",
   },
   {
@@ -36,11 +40,7 @@ const LOGIC_STEPS = [
   },
   {
     title: "Inclusive Practice",
-    description: "Workflows are evaluated against an explicit inclusion lens.",
-  },
-  {
-    title: "Reliable Implementation",
-    description: "Practice is consistent, documented, and supported across the school.",
+    description: "Workflows are evaluated against an explicit inclusion lens for students with disability and complex needs.",
   },
 ];
 
@@ -113,14 +113,16 @@ export default function Home() {
             AI-supported inclusive practice?
           </p>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
-            Generative AI is already part of everyday school life. But it is
-            mostly an individual habit, not a professional practice. That gap
-            has a cost. Staff rework unreliable output. Quality varies between
+            Schools are being told to use AI responsibly. The harder problem
+            is turning those principles into daily routines teachers can
+            actually use, and that leaders can quality assure. Most current
+            AI use is informal: an individual habit, not a professional
+            practice. Staff rework unreliable output. Quality varies between
             classrooms. Decisions affecting students get made with no clear
             record of how AI was involved. This research starts from that
             gap. It sets out what changes when AI use moves from informal
-            habit to workflows that are structured, quality-assured, and
-            tested against inclusive teaching standards.
+            habit to governed workflows that are structured, quality-assured,
+            and tested against inclusive teaching standards.
           </p>
         </div>
       </section>
@@ -144,8 +146,8 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <SectionHeader
             eyebrow="Research Logic"
-            title="From casual use to reliable implementation"
-            description="The hub is organised around this progression. Each stage builds on the one before it, rather than replacing it."
+            title="From principles to inclusive practice"
+            description="The hub is organised around this chain. Each stage depends on the one before it, rather than replacing it."
           />
           <ol className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border-subtle bg-border-subtle sm:grid-cols-5">
             {LOGIC_STEPS.map((step, i) => (

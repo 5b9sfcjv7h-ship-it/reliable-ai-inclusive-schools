@@ -79,6 +79,17 @@ export const frameworks: Framework[] = [
     status: "developing",
   },
   {
+    slug: "governed-teacher-workflows",
+    name: "Governed Teacher Workflows",
+    shortName: "Governed Teacher Workflows",
+    description:
+      "A practical implementation frame for turning responsible AI principles into repeatable, teacher-facing workflows. It combines use-case tiering by risk, workflow design, a quality assurance rubric, governance routines, professional judgement safeguards, and an inclusive education lens.",
+    relevance:
+      "Acts as the connective layer between high-level responsible AI guidance and day-to-day classroom practice. Every workflow in this hub is built and checked against this frame before it is trialled.",
+    tags: ["governance", "implementation", "quality assurance", "inclusion"],
+    status: "developing",
+  },
+  {
     slug: "design-based-research",
     name: "Design-Based Research",
     shortName: "Design-Based Research",
