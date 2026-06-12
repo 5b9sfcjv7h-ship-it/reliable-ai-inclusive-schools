@@ -7,6 +7,7 @@ const STORAGE_KEY = "reading-support";
 const OPTIONS = [
   { className: "rs-text", label: "Larger text" },
   { className: "rs-space", label: "More line spacing" },
+  { className: "rs-dyslexic", label: "Dyslexia-friendly font" },
 ] as const;
 
 type OptionClass = (typeof OPTIONS)[number]["className"];

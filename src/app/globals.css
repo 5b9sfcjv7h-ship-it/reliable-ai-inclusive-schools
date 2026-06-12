@@ -36,6 +36,12 @@ html.rs-space :is(p, li, dd) {
   line-height: 1.95;
 }
 
+/* Reading support: optional dyslexia-friendly typeface for running text.
+   Serif display headings keep their explicit font-family. */
+html.rs-dyslexic body {
+  font-family: var(--font-opendyslexic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -17,6 +18,18 @@ const newsreader = Newsreader({
   axes: ["opsz"],
 });
 
+// Optional reading support. SIL OFL licensed (see src/fonts/OFL.txt).
+// preload is off so the files only download when a reader enables it.
+const openDyslexic = localFont({
+  src: [
+    { path: "../fonts/OpenDyslexic-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/OpenDyslexic-Bold.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-opendyslexic",
+  display: "swap",
+  preload: false,
+});
+
 export const metadata: Metadata = {
   title: "Reliable AI for Inclusive Schools",
   description:
@@ -29,7 +42,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${newsreader.variable} ${openDyslexic.variable}`}
+    >
       <body className="flex min-h-screen flex-col antialiased">
         <a
           href="#main-content"
