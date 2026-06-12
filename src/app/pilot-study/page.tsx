@@ -2,7 +2,7 @@ import { Hero } from "@/components/Hero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ContentCard } from "@/components/ContentCard";
 import { CalloutPanel } from "@/components/CalloutPanel";
-import { SafetyNotice } from "@/components/SafetyNotice";
+import { PlainTerms } from "@/components/PlainTerms";
 
 const PHASES = [
   {
@@ -40,9 +40,16 @@ export default function PilotStudyPage() {
         subtitle="The pilot study examines whether structured AI workflows can be used reliably for low-risk, teacher-facing tasks. It applies a design-based research approach: workflows are drafted, trialled, observed, and revised in cycles with participating staff."
       />
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section className="border-b border-border-subtle py-12 sm:py-16">
         <div className="mx-auto max-w-3xl px-6">
-          <SafetyNotice />
+          <PlainTerms>
+            <p>
+              A small trial of the hub&rsquo;s workflows with volunteer staff
+              on low-risk, teacher-facing tasks. It tests whether the
+              workflows are reliable and practical to use, not whether AI
+              improves student learning. All observations are de-identified.
+            </p>
+          </PlainTerms>
         </div>
       </section>
 

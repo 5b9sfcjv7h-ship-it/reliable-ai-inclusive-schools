@@ -2,8 +2,8 @@ import { Hero } from "@/components/Hero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { TagPill } from "@/components/TagPill";
-import { SafetyNotice } from "@/components/SafetyNotice";
 import { CalloutPanel } from "@/components/CalloutPanel";
+import { PlainTerms } from "@/components/PlainTerms";
 import { workflows } from "@/data/workflows";
 
 export default function AiWorkflowLabPage() {
@@ -15,15 +15,46 @@ export default function AiWorkflowLabPage() {
         subtitle="Each workflow sets out a defined sequence of steps, the audience it is designed for, and the quality checks applied before any output is used."
       />
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl space-y-6 px-6">
-          <SafetyNotice />
-          <CalloutPanel title="Task-level design check">
-            Each workflow is also checked against a simple SAMR question: is
-            AI substituting, augmenting, modifying, or redefining the teacher
-            task? The further a task moves from substitution, the stronger
-            the quality assurance and inclusion safeguards it needs.
-          </CalloutPanel>
+      <section className="border-b border-border-subtle py-12 sm:py-16">
+        <div className="mx-auto max-w-3xl px-6">
+          <PlainTerms>
+            <p>
+              These are step-by-step routines for common teaching tasks that
+              use AI. Each one names its audience, the steps to follow, and
+              the checks a teacher applies before anything is used with
+              students. All examples are de-identified.
+            </p>
+          </PlainTerms>
+
+          <nav aria-label="Workflows on this page" className="mt-10">
+            <p className="text-xs font-medium tracking-[0.16em] text-muted uppercase">
+              Workflows on this page
+            </p>
+            <ol className="mt-3 space-y-2 text-sm">
+              {workflows.map((workflow, i) => (
+                <li key={workflow.slug}>
+                  <a
+                    href={`#${workflow.slug}`}
+                    className="text-foreground-soft hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  >
+                    <span aria-hidden="true" className="mr-2 text-xs font-medium tracking-[0.16em] text-muted">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    {workflow.title}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
+          <div className="mt-10">
+            <CalloutPanel title="Task-level design check">
+              Each workflow is also checked against a simple SAMR question: is
+              AI substituting, augmenting, modifying, or redefining the teacher
+              task? The further a task moves from substitution, the stronger
+              the quality assurance and inclusion safeguards it needs.
+            </CalloutPanel>
+          </div>
         </div>
       </section>
 

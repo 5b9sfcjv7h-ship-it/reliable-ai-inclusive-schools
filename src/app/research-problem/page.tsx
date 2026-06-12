@@ -1,6 +1,19 @@
 import { Hero } from "@/components/Hero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { CalloutPanel } from "@/components/CalloutPanel";
+import { PlainTerms } from "@/components/PlainTerms";
+
+const CONTENTS = [
+  { href: "#the-problem", label: "The problem" },
+  { href: "#implementation-gap", label: "The implementation gap" },
+  { href: "#why-now", label: "Why it matters now" },
+  { href: "#inclusive-lens", label: "Why inclusive education is the right lens" },
+  { href: "#sharper-question", label: "A sharper question" },
+  { href: "#working-definitions", label: "Working definitions" },
+  { href: "#risks-opportunities", label: "Risks and opportunities" },
+  { href: "#scope", label: "Scope of this first phase" },
+  { href: "#contribution", label: "Possible contribution" },
+];
 
 export default function ResearchProblemPage() {
   return (
@@ -11,7 +24,38 @@ export default function ResearchProblemPage() {
         subtitle="This page sets out the problem this research addresses, the lens used to frame it, and the working definitions that recur across the rest of the hub."
       />
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section className="border-b border-border-subtle py-12 sm:py-16">
+        <div className="mx-auto max-w-3xl px-6">
+          <PlainTerms>
+            <p>
+              Teachers are already using AI, mostly informally. Schools need
+              shared routines for checking that AI-assisted work is accurate,
+              accessible, private, and appropriate before it affects
+              students. This page explains that gap and how the research
+              approaches it.
+            </p>
+          </PlainTerms>
+          <nav aria-label="On this page" className="mt-10">
+            <p className="text-xs font-medium tracking-[0.16em] text-muted uppercase">
+              On this page
+            </p>
+            <ul className="mt-3 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
+              {CONTENTS.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="text-foreground-soft hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section id="the-problem" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="01" title="The problem" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
@@ -29,7 +73,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="implementation-gap" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="02" title="The implementation gap" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
@@ -44,7 +88,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="why-now" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="03" title="Why it matters now" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
@@ -60,7 +104,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="inclusive-lens" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="04" title="Why inclusive education is the right lens" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
@@ -88,7 +132,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="sharper-question" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-10">
           <SectionHeader eyebrow="05" title="A sharper question" />
           <CalloutPanel title="Weak question">
@@ -107,7 +151,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="working-definitions" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6 space-y-10">
           <SectionHeader eyebrow="06" title="Working definitions" />
           <CalloutPanel title="Casual AI use">
@@ -124,7 +168,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="risks-opportunities" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <div className="grid gap-10 sm:grid-cols-2">
             <div>
@@ -173,7 +217,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="border-b border-border-subtle py-16 sm:py-20">
+      <section id="scope" className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="09" title="Scope of this first phase" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
@@ -188,7 +232,7 @@ export default function ResearchProblemPage() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20">
+      <section id="contribution" className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="10" title="Possible contribution" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">

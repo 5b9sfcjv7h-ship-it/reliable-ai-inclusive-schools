@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { ReadingSupport } from "@/components/ReadingSupport";
 
 const GROUPS = [
   {
@@ -44,8 +45,9 @@ export function Navigation() {
           Reliable AI for Inclusive Schools
         </Link>
 
-        <nav className="hidden lg:block">
-          <ul className="flex items-center text-sm">
+        <div className="flex items-center gap-4">
+          <nav className="hidden lg:block">
+            <ul className="flex items-center text-sm">
             {GROUPS.map((group, gi) => (
               <li key={group.label} className="flex items-center">
                 {gi > 0 && (
@@ -76,18 +78,20 @@ export function Navigation() {
                 </ul>
               </li>
             ))}
-          </ul>
-        </nav>
+            </ul>
+          </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          className="rounded-md border border-border-subtle px-3 py-1.5 text-sm text-foreground lg:hidden"
-        >
-          {open ? "Close" : "Menu"}
-        </button>
+          <ReadingSupport />
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            className="rounded-md border border-border-subtle px-3 py-1.5 text-sm text-foreground lg:hidden"
+          >
+            {open ? "Close" : "Menu"}
+          </button>
+        </div>
       </div>
 
       {open && (

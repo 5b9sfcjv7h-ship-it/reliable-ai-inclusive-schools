@@ -73,6 +73,33 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section id="inclusive-design" className="border-b border-border-subtle py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <SectionHeader
+            eyebrow="Inclusive design"
+            title="How this hub approaches accessibility"
+          />
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
+            This hub is a working research site. It aims to model the
+            inclusive design principles it argues for: clear structure and
+            navigation, readable typography, sufficient contrast,
+            keyboard-accessible controls, plain-language summaries on key
+            pages, and optional reading supports in the site header. No
+            student-identifiable or school-identifiable information appears
+            anywhere on the site.
+          </p>
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
+            Universal Design for Learning informs the site itself, not just
+            the research. Information is presented in more than one way,
+            through text, structure, and diagrams. Reading supports are
+            optional rather than imposed. Pages state their purpose up
+            front. The hub has not yet been formally audited against WCAG,
+            and accessibility will continue to be reviewed and improved as
+            the site develops.
+          </p>
+        </div>
+      </section>
+
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Status of content" title="How to read this hub" />

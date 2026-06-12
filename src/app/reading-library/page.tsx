@@ -24,7 +24,14 @@ function ReadingRow({ reading }: { reading: Reading }) {
         <p className="text-xs font-medium tracking-[0.16em] text-muted uppercase">
           {reading.authors} · {reading.year} · {reading.type}
         </p>
-        <StatusBadge status={reading.status} />
+        <span className="flex items-center gap-2">
+          {reading.startHere && (
+            <span className="inline-flex items-center rounded-full border border-accent bg-accent/5 px-2.5 py-0.5 text-xs font-medium tracking-wide text-accent uppercase">
+              Start here
+            </span>
+          )}
+          <StatusBadge status={reading.status} />
+        </span>
       </div>
       <h3 className="mt-2 text-lg font-semibold tracking-[-0.01em] text-foreground">
         {reading.title}
@@ -73,6 +80,19 @@ export default function ReadingLibraryPage() {
         title="The literature grounding this research"
         subtitle="Key journal articles, frameworks, reports, and policy guidance, with notes on how each connects to the research question."
       />
+
+      <section className="border-b border-border-subtle py-12 sm:py-16">
+        <div className="mx-auto max-w-3xl px-6">
+          <CalloutPanel title="How to use this library">
+            New to this work? Begin with the two sources marked{" "}
+            <span className="font-medium text-accent">Start here</span>. The
+            core sources ground the inclusion and implementation lens. The
+            clusters then group sources by purpose: task design, and
+            governance. Every entry links to its official source and notes
+            why it matters for this research.
+          </CalloutPanel>
+        </div>
+      </section>
 
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">

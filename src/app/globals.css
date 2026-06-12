@@ -26,6 +26,16 @@ html {
   scroll-padding-top: 5rem;
 }
 
+/* Reading support: larger text scales every rem-based size, like text-only zoom. */
+html.rs-text {
+  font-size: 112.5%;
+}
+
+/* Reading support: more breathing room for running text. */
+html.rs-space :is(p, li, dd) {
+  line-height: 1.95;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

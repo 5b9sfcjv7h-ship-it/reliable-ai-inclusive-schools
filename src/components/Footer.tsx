@@ -64,11 +64,22 @@ export function Footer() {
             </div>
           </nav>
         </div>
-        <p className="mt-10 text-xs text-muted">
-          All examples and field notes are de-identified. No
-          student-identifiable, school-identifiable, or confidential
-          information is published on this site.
-        </p>
+        <div className="mt-10 space-y-2 text-xs text-muted">
+          <p>
+            All examples and field notes are de-identified. No
+            student-identifiable, school-identifiable, or confidential
+            information is published on this site.
+          </p>
+          <p>
+            This hub aims to model the inclusive design it argues for.{" "}
+            <Link
+              href="/about#inclusive-design"
+              className="underline decoration-border-subtle underline-offset-2 hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              How this hub approaches accessibility
+            </Link>
+          </p>
+        </div>
       </div>
     </footer>
   );

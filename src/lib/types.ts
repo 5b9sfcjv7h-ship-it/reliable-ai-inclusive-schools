@@ -18,6 +18,7 @@ export interface Reading {
   relevance: string;
   url?: string;
   linkLabel?: string;
+  startHere?: boolean;
   tags: string[];
   status: Status;
   visibility: Visibility;

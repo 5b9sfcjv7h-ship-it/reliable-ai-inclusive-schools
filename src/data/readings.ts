@@ -12,6 +12,7 @@ export const readings: Reading[] = [
     relevance:
       "Provides the inclusive-design vocabulary used throughout this hub to evaluate whether AI-supported adaptations genuinely widen access rather than just add novelty.",
     url: "https://udlguidelines.cast.org/",
+    startHere: true,
     tags: ["UDL", "inclusion", "curriculum design"],
     status: "integrated",
     visibility: "public-safe",
@@ -119,6 +120,7 @@ export const readings: Reading[] = [
     relevance:
       "The primary Australian policy foundation for this hub. Used to check that workflows and governance routines align with national school-sector expectations.",
     url: "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+    startHere: true,
     tags: ["policy", "governance", "Australia", "Governance and Responsible Implementation"],
     status: "integrated",
     visibility: "public-safe",
