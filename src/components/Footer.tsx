@@ -1,21 +1,36 @@
 import Link from "next/link";
 
-const LINKS = [
-  { href: "/research-problem", label: "Research Problem" },
-  { href: "/reading-library", label: "Reading Library" },
-  { href: "/frameworks", label: "Frameworks" },
-  { href: "/ai-workflow-lab", label: "AI Workflow Lab" },
-  { href: "/field-notes", label: "Field Notes" },
-  { href: "/pilot-study", label: "Pilot Study" },
-  { href: "/glossary", label: "Glossary" },
-  { href: "/about", label: "About" },
+const GROUPS = [
+  {
+    label: "The Research",
+    links: [
+      { href: "/research-problem", label: "Research Problem" },
+      { href: "/reading-library", label: "Reading Library" },
+      { href: "/frameworks", label: "Frameworks" },
+    ],
+  },
+  {
+    label: "The Practice",
+    links: [
+      { href: "/ai-workflow-lab", label: "AI Workflow Lab" },
+      { href: "/pilot-study", label: "Pilot Study" },
+      { href: "/field-notes", label: "Field Notes" },
+    ],
+  },
+  {
+    label: "Reference",
+    links: [
+      { href: "/glossary", label: "Glossary" },
+      { href: "/about", label: "About" },
+    ],
+  },
 ];
 
 export function Footer() {
   return (
     <footer className="border-t border-border-subtle">
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-8 sm:grid-cols-2">
+        <div className="grid gap-10 sm:grid-cols-2">
           <div>
             <p className="font-serif text-lg font-medium text-foreground">
               Reliable AI for Inclusive Schools
@@ -26,18 +41,27 @@ export function Footer() {
             </p>
           </div>
           <nav aria-label="Footer">
-            <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
-              {LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-muted hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3">
+              {GROUPS.map((group) => (
+                <div key={group.label}>
+                  <p className="text-xs font-medium tracking-[0.16em] text-muted uppercase">
+                    {group.label}
+                  </p>
+                  <ul className="mt-3 space-y-2 text-sm">
+                    {group.links.map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="text-muted hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </nav>
         </div>
         <p className="mt-10 text-xs text-muted">

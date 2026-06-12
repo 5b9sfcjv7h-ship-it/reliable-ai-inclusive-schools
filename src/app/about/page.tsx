@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SafetyNotice } from "@/components/SafetyNotice";
+import { CalloutPanel } from "@/components/CalloutPanel";
 
 export default function AboutPage() {
   return (
@@ -23,6 +24,37 @@ export default function AboutPage() {
             a foundation for future advisory and professional learning work
             with schools.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-border-subtle py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <SectionHeader eyebrow="Provenance" title="Who is behind this work" />
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
+            This hub is developed and maintained by a Queensland-based special
+            education teacher and curriculum leader, as part of a developing
+            PhD pathway. The work is grounded in day-to-day practice:
+            designing curriculum, adjustments, and communication supports for
+            students with disability and complex learning needs, and leading
+            staff through the practical questions AI raises in that work.
+          </p>
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
+            The focus is deliberately narrow: teacher-facing AI workflows for
+            inclusive practice, and the governance and quality assurance that
+            make them reliable. Claims made here are limited to what that
+            experience and the cited literature can support.
+          </p>
+          <div className="mt-8">
+            <CalloutPanel title="What this site is not">
+              <p>
+                This is a developing research and advisory hub. It is not
+                official advice from any government, department, or school,
+                and it does not speak for any employer. No
+                student-identifiable or school-identifiable information
+                appears here.
+              </p>
+            </CalloutPanel>
+          </div>
         </div>
       </section>
 
