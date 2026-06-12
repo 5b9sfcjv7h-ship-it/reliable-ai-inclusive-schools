@@ -9,6 +9,7 @@ export function ContentCard({
   description,
   tags,
   status,
+  link,
   children,
 }: {
   title: string;
@@ -16,6 +17,7 @@ export function ContentCard({
   description: string;
   tags?: string[];
   status?: Status;
+  link?: { href: string; label: string };
   children?: ReactNode;
 }) {
   return (
@@ -41,6 +43,19 @@ export function ContentCard({
             <TagPill key={tag} label={tag} />
           ))}
         </div>
+      )}
+      {link && (
+        <p className="mt-5">
+          <a
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            {link.label}
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
+        </p>
       )}
     </article>
   );

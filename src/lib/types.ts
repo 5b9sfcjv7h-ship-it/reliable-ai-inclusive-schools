@@ -10,6 +10,8 @@ export interface Reading {
   type: "journal article" | "book" | "report" | "policy document" | "framework guide";
   summary: string;
   relevance: string;
+  url?: string;
+  linkLabel?: string;
   tags: string[];
   status: Status;
   visibility: Visibility;

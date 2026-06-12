@@ -3,8 +3,25 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { ContentCard } from "@/components/ContentCard";
 import { CalloutPanel } from "@/components/CalloutPanel";
 import { readings } from "@/data/readings";
+import type { Reading } from "@/lib/types";
 
 const GOVERNANCE_TAG = "Governance and Responsible Implementation";
+
+const LINK_LABELS: Record<Reading["type"], string> = {
+  "journal article": "View paper",
+  book: "View source",
+  report: "Read report",
+  "policy document": "Read guidance",
+  "framework guide": "View framework",
+};
+
+function sourceLink(reading: Reading) {
+  if (!reading.url) return undefined;
+  return {
+    href: reading.url,
+    label: reading.linkLabel ?? LINK_LABELS[reading.type],
+  };
+}
 
 export default function ReadingLibraryPage() {
   const governanceReadings = readings.filter((reading) =>
@@ -32,9 +49,10 @@ export default function ReadingLibraryPage() {
               description={reading.summary}
               tags={reading.tags}
               status={reading.status}
+              link={sourceLink(reading)}
             >
               <p className="mt-4 border-t border-border-subtle pt-4 text-[0.9375rem] leading-relaxed text-foreground">
-                <span className="font-medium">Relevance: </span>
+                <span className="font-medium">Why it matters: </span>
                 {reading.relevance}
               </p>
             </ContentCard>
@@ -66,9 +84,10 @@ export default function ReadingLibraryPage() {
                 description={reading.summary}
                 tags={reading.tags}
                 status={reading.status}
+                link={sourceLink(reading)}
               >
                 <p className="mt-4 border-t border-border-subtle pt-4 text-[0.9375rem] leading-relaxed text-foreground">
-                  <span className="font-medium">Relevance: </span>
+                  <span className="font-medium">Why it matters: </span>
                   {reading.relevance}
                 </p>
               </ContentCard>
