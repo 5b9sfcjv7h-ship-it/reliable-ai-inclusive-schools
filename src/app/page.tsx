@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ResearchCard } from "@/components/ResearchCard";
+import { ResearchLogicDiagram } from "@/components/ResearchLogicDiagram";
 import { SafetyNotice } from "@/components/SafetyNotice";
 
 const PROBLEM_CARDS = [
@@ -44,53 +46,69 @@ const LOGIC_STEPS = [
   },
 ];
 
-const SECTION_LINKS = [
+const SECTION_GROUPS = [
   {
-    title: "Research Problem",
-    description:
-      "The problem this hub addresses, why it matters now, and the inclusive education lens used throughout.",
-    href: "/research-problem",
+    label: "The Research",
+    items: [
+      {
+        title: "Research Problem",
+        description:
+          "The problem this hub addresses, why it matters now, and the inclusive education lens used throughout.",
+        href: "/research-problem",
+      },
+      {
+        title: "Reading Library",
+        description:
+          "The literature and policy guidance that grounds this research, with notes on relevance to schools.",
+        href: "/reading-library",
+      },
+      {
+        title: "Frameworks",
+        description:
+          "The frameworks used to evaluate AI-supported practice, from UDL to implementation science.",
+        href: "/frameworks",
+      },
+    ],
   },
   {
-    title: "Reading Library",
-    description:
-      "The literature and policy guidance that grounds this research, with notes on relevance to schools.",
-    href: "/reading-library",
+    label: "The Practice",
+    items: [
+      {
+        title: "AI Workflow Lab",
+        description:
+          "Structured, reviewable workflows for using AI in curriculum, communication, and quality assurance.",
+        href: "/ai-workflow-lab",
+      },
+      {
+        title: "Pilot Study",
+        description:
+          "The design and status of the pilot study testing these workflows in practice.",
+        href: "/pilot-study",
+      },
+      {
+        title: "Field Notes",
+        description:
+          "De-identified observations from early conversations and trials, and what they imply for the workflows.",
+        href: "/field-notes",
+      },
+    ],
   },
   {
-    title: "Frameworks",
-    description:
-      "The frameworks used to evaluate AI-supported practice, from UDL to implementation science.",
-    href: "/frameworks",
-  },
-  {
-    title: "AI Workflow Lab",
-    description:
-      "Structured, reviewable workflows for using AI in curriculum, communication, and quality assurance.",
-    href: "/ai-workflow-lab",
-  },
-  {
-    title: "Field Notes",
-    description:
-      "De-identified observations from early conversations and trials, and what they imply for the workflows.",
-    href: "/field-notes",
-  },
-  {
-    title: "Pilot Study",
-    description:
-      "The design and status of the pilot study testing these workflows in practice.",
-    href: "/pilot-study",
-  },
-  {
-    title: "Glossary",
-    description:
-      "Plain-English definitions of the frameworks, terms, and concepts used across this hub.",
-    href: "/glossary",
-  },
-  {
-    title: "About",
-    description: "About this research, its purpose, and how it is being conducted.",
-    href: "/about",
+    label: "Reference",
+    items: [
+      {
+        title: "Glossary",
+        description:
+          "Plain-English definitions of the frameworks, terms, and concepts used across this hub.",
+        href: "/glossary",
+      },
+      {
+        title: "About",
+        description:
+          "About this research, its purpose, and how it is being conducted.",
+        href: "/about",
+      },
+    ],
   },
 ];
 
@@ -99,9 +117,24 @@ export default function Home() {
     <>
       <Hero
         eyebrow="Research Hub"
-        title="Reliable AI for Inclusive Schools"
-        subtitle="AI is now part of everyday school practice. This hub sets out how to make that practice reliable, inclusive, and quality-assured, and what it takes to implement it well."
-      />
+        title="Turning responsible AI principles into inclusive school practice"
+        subtitle="A research and advisory hub on the workflows, safeguards, and implementation routines schools need to use generative AI reliably."
+      >
+        <div className="flex flex-wrap items-center gap-3">
+          <Link
+            href="/research-problem"
+            className="rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-surface transition-colors hover:bg-accent/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            Start with the research problem
+          </Link>
+          <Link
+            href="/ai-workflow-lab"
+            className="rounded-md border border-border-subtle bg-surface px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            See the workflows
+          </Link>
+        </div>
+      </Hero>
 
       <section className="border-b border-border-subtle py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-6">
@@ -149,31 +182,37 @@ export default function Home() {
             title="From principles to inclusive practice"
             description="The hub is organised around this chain. Each stage depends on the one before it, rather than replacing it."
           />
-          <ol className="mt-10 grid gap-px overflow-hidden rounded-md border border-border-subtle bg-border-subtle sm:grid-cols-5">
-            {LOGIC_STEPS.map((step, i) => (
-              <li key={step.title} className="flex flex-col gap-2 bg-surface p-5">
-                <span className="text-xs font-medium tracking-[0.16em] text-accent uppercase">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-base font-semibold tracking-[-0.01em] text-foreground">{step.title}</span>
-                <span className="text-sm leading-relaxed text-foreground-soft">{step.description}</span>
-              </li>
-            ))}
-          </ol>
+          <ResearchLogicDiagram steps={LOGIC_STEPS} />
         </div>
       </section>
 
       <section className="border-b border-border-subtle py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-6">
           <SectionHeader eyebrow="Contents" title="Sections of this hub" />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {SECTION_LINKS.map((section) => (
-              <ResearchCard
-                key={section.href}
-                title={section.title}
-                description={section.description}
-                href={section.href}
-              />
+          <div className="mt-10 grid gap-x-10 gap-y-12 sm:grid-cols-3">
+            {SECTION_GROUPS.map((group) => (
+              <div key={group.label}>
+                <p className="text-xs font-medium tracking-[0.16em] text-muted uppercase">
+                  {group.label}
+                </p>
+                <ul className="mt-3 divide-y divide-border-subtle border-t border-border-subtle">
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="group block py-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                      >
+                        <span className="block text-base font-semibold tracking-[-0.01em] text-foreground transition-colors group-hover:text-accent">
+                          {item.title}
+                        </span>
+                        <span className="mt-1 block text-sm leading-relaxed text-foreground-soft">
+                          {item.description}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
