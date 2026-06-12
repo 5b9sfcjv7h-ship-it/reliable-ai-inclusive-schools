@@ -7,7 +7,13 @@ export interface Reading {
   title: string;
   authors: string;
   year: string;
-  type: "journal article" | "book" | "report" | "policy document" | "framework guide";
+  type:
+    | "journal article"
+    | "book"
+    | "report"
+    | "policy document"
+    | "framework guide"
+    | "professional article";
   summary: string;
   relevance: string;
   url?: string;

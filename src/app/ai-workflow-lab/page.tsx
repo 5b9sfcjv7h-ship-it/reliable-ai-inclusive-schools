@@ -3,6 +3,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { StatusBadge } from "@/components/StatusBadge";
 import { TagPill } from "@/components/TagPill";
 import { SafetyNotice } from "@/components/SafetyNotice";
+import { CalloutPanel } from "@/components/CalloutPanel";
 import { workflows } from "@/data/workflows";
 
 export default function AiWorkflowLabPage() {
@@ -15,8 +16,14 @@ export default function AiWorkflowLabPage() {
       />
 
       <section className="border-b border-border-subtle py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl px-6">
+        <div className="mx-auto max-w-3xl space-y-6 px-6">
           <SafetyNotice />
+          <CalloutPanel title="Task-level design check">
+            Each workflow is also checked against a simple SAMR question: is
+            AI substituting, augmenting, modifying, or redefining the teacher
+            task? The further a task moves from substitution, the stronger
+            the quality assurance and inclusion safeguards it needs.
+          </CalloutPanel>
         </div>
       </section>
 

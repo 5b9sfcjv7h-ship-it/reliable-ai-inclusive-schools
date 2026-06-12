@@ -56,8 +56,26 @@ export const readings: Reading[] = [
       "Outlines the Substitution, Augmentation, Modification, Redefinition model for evaluating the depth of technology-enabled change to a learning task.",
     relevance:
       "Offers a shared language for distinguishing AI use that merely substitutes for existing tasks from AI use that meaningfully redefines them.",
+    url: "https://hippasus.com/rrpweblog/archives/2014/06/29/LearningTechnologySAMRModel.pdf",
+    linkLabel: "View guide",
     tags: ["SAMR", "technology integration", "task design"],
     status: "developing",
+    visibility: "public-safe",
+  },
+  {
+    slug: "keys-harris-samr-ai-matrix",
+    title: "A Practical SAMR + AI Framework for Instructional Design",
+    authors: "Keys-Harris, A.",
+    year: "2026",
+    type: "professional article",
+    summary:
+      "Proposes a SAMR + AI Matrix that combines SAMR, Bloom's Taxonomy, and generative AI functionality to help educators deliberately redesign learning tasks for the presence of AI.",
+    relevance:
+      "Useful for task redesign and for keeping cognitive demand explicit when AI enters a task. It is a higher education instructional design source, so it needs adaptation for inclusive, teacher-facing school workflows, and it is not evidence that AI improves learning outcomes.",
+    url: "https://er.educause.edu/articles/2026/4/a-practical-samr--ai-framework-for-instructional-design",
+    linkLabel: "Read article",
+    tags: ["instructional design", "SAMR", "task design", "Instructional Design and AI Integration"],
+    status: "draft",
     visibility: "public-safe",
   },
   {

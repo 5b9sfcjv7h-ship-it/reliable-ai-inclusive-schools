@@ -36,13 +36,13 @@ export const frameworks: Framework[] = [
   },
   {
     slug: "samr",
-    name: "Substitution, Augmentation, Modification, Redefinition",
-    shortName: "SAMR",
+    name: "Substitution, Augmentation, Modification, Redefinition (SAMR + AI)",
+    shortName: "SAMR + AI",
     description:
-      "A model for classifying the level of change a technology brings to a learning task, ranging from direct substitution to redefinition of the task itself.",
+      "A model for classifying how far a technology changes a learning task, from direct substitution through to redefinition. Extended for generative AI, it is used to assess how AI changes both the task and the cognitive work the task demands.",
     relevance:
-      "Applied to workflow design to be explicit about whether an AI-supported task is a like-for-like substitution or a genuine redesign of practice.",
-    tags: ["technology integration", "task design"],
+      "Used as an instructional design lens, not a governance framework or evidence of learning impact. In this hub, each SAMR level triggers further questions before a workflow is adopted: quality assurance, accessibility, privacy, curriculum fit, and professional judgement.",
+    tags: ["technology integration", "task design", "generative AI"],
     status: "developing",
   },
   {
