@@ -49,7 +49,7 @@ export default function PilotStudyPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Approach" title="Design-based research, in cycles" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Rather than testing a fixed workflow once, this pilot works in
             short cycles. A workflow is drafted. A small number of staff trial
             it on a real, low-risk task. Observations are recorded as field
@@ -58,7 +58,7 @@ export default function PilotStudyPage() {
             has to be found through use: enough to support quality and
             inclusion, without adding workload staff cannot sustain.
           </p>
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             The pilot covers teacher-facing tasks such as curriculum
             adaptation, accessible resource review, AAC-friendly language
             support, reporting support, planning support, and quality
@@ -75,7 +75,7 @@ export default function PilotStudyPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Evidence" title="What the pilot will produce" />
-          <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted">
+          <ul className="mt-6 space-y-3 text-[0.9375rem] leading-relaxed text-foreground-soft">
             <li>Teacher workflow maps for each trialled task.</li>
             <li>A set of risk-tiered AI use cases for teacher-facing work.</li>
             <li>Results from a quality assurance checklist applied to AI-generated outputs.</li>

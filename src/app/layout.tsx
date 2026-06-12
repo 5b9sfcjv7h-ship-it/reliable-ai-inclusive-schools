@@ -1,7 +1,21 @@
 import type { Metadata } from "next";
+import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  variable: "--font-newsreader",
+  display: "swap",
+  axes: ["opsz"],
+});
 
 export const metadata: Metadata = {
   title: "Reliable AI for Inclusive Schools",
@@ -15,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
       <body className="flex min-h-screen flex-col antialiased">
         <a
           href="#main-content"

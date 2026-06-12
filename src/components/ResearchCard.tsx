@@ -12,19 +12,16 @@ export function ResearchCard({
   meta?: string;
 }) {
   const content = (
-    <div className="flex h-full flex-col rounded-lg border border-border-subtle bg-surface p-6 transition-colors hover:border-accent/50">
+    <div className="flex h-full flex-col rounded-md border border-border-subtle bg-surface p-6 transition-colors group-hover:border-accent/50">
       {meta && (
-        <p className="mb-2 text-xs font-medium tracking-[0.2em] text-accent uppercase">
+        <p className="mb-2 text-xs font-medium tracking-[0.16em] text-muted uppercase">
           {meta}
         </p>
       )}
-      <h3 className="font-serif text-xl text-foreground">{title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-muted">{description}</p>
-      {href && (
-        <span className="mt-4 text-sm font-medium text-accent">
-          View &rarr;
-        </span>
-      )}
+      <h3 className="text-base font-semibold tracking-[-0.01em] text-foreground group-hover:text-accent">
+        {title}
+      </h3>
+      <p className="mt-2 text-sm leading-relaxed text-foreground-soft">{description}</p>
     </div>
   );
 
@@ -33,7 +30,7 @@ export function ResearchCard({
   return (
     <Link
       href={href}
-      className="block h-full rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      className="group block h-full rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
     >
       {content}
     </Link>

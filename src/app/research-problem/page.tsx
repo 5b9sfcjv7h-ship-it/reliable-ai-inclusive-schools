@@ -14,7 +14,7 @@ export default function ResearchProblemPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="01" title="The problem" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Generative AI tools are already widely used in schools, but mostly
             in an informal, individual, and unreviewed way. Teachers and
             support staff use general-purpose chat tools to draft resources,
@@ -32,7 +32,7 @@ export default function ResearchProblemPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="02" title="The implementation gap" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             There is no shortage of responsible AI guidance. National
             frameworks, government policy papers, and international guidelines
             now set out principles for safe, ethical AI use in education.
@@ -47,7 +47,7 @@ export default function ResearchProblemPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="03" title="Why it matters now" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             The window for shaping how generative AI is used in schools is
             narrow. Practice is forming quickly, often ahead of policy,
             training, or shared standards. Habits formed now will be costly to
@@ -63,18 +63,19 @@ export default function ResearchProblemPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="04" title="Why inclusive education is the right lens" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Inclusive education sets a demanding test for any new classroom
             technology. Does it work for the full range of learners,
             including students with disability, additional learning needs, or
-            complex communication needs? Or only for an assumed "average"
-            student? Frameworks such as Universal Design for Learning already
+            complex communication needs? Or only for an assumed
+            &ldquo;average&rdquo; student? Frameworks such as Universal Design
+            for Learning already
             give schools a vocabulary for evaluating curriculum design on this
             basis. Applying the same lens to AI-supported practice keeps the
             focus on real students and real barriers, not on the novelty of
             the technology.
           </p>
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Inclusive and special education are high-stakes settings for this
             work. AI-generated resources, adjustments, communication
             supports, reporting comments, planning documents, and curriculum
@@ -91,13 +92,14 @@ export default function ResearchProblemPage() {
         <div className="mx-auto max-w-3xl px-6 space-y-10">
           <SectionHeader eyebrow="05" title="A sharper question" />
           <CalloutPanel title="Weak question">
-            "Can AI help teachers?" This framing treats AI as a generic
+            &ldquo;Can AI help teachers?&rdquo; This framing treats AI as a generic
             productivity tool and does not test whether the help is reliable,
             inclusive, or safe to use with students.
           </CalloutPanel>
           <CalloutPanel title="Stronger question" variant="accent">
-            "What conditions make AI-supported inclusive practice reliable,
-            ethical, useful, and safe inside real schools?" This framing
+            &ldquo;What conditions make AI-supported inclusive practice
+            reliable, ethical, useful, and safe inside real schools?&rdquo;
+            This framing
             treats reliability as something schools build through governance,
             workflow design, and quality assurance, not something that comes
             with the tool.
@@ -127,7 +129,7 @@ export default function ResearchProblemPage() {
           <div className="grid gap-10 sm:grid-cols-2">
             <div>
               <SectionHeader eyebrow="07" title="Risks" />
-              <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted">
+              <ul className="mt-6 space-y-3 text-[0.9375rem] leading-relaxed text-foreground-soft">
                 <li>
                   Inconsistent or unverified AI output being used directly with
                   students.
@@ -148,7 +150,7 @@ export default function ResearchProblemPage() {
             </div>
             <div>
               <SectionHeader eyebrow="08" title="Opportunities" />
-              <ul className="mt-6 space-y-3 text-sm leading-relaxed text-muted">
+              <ul className="mt-6 space-y-3 text-[0.9375rem] leading-relaxed text-foreground-soft">
                 <li>
                   Reducing the time cost of high-quality differentiation and
                   accessible resource design.
@@ -174,7 +176,7 @@ export default function ResearchProblemPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="09" title="Scope of this first phase" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             The first version of this work focuses on teacher-facing AI use:
             staff using AI tools to prepare resources, adaptations,
             communication supports, and planning or reporting drafts, with a
@@ -189,7 +191,7 @@ export default function ResearchProblemPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="10" title="Possible contribution" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             This research aims to produce a small set of tested, documented
             workflows covering curriculum adaptation, AAC vocabulary planning,
             accessible resource review, AI output quality assurance, and

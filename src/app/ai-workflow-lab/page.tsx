@@ -29,26 +29,26 @@ export default function AiWorkflowLabPage() {
                 <StatusBadge status={workflow.status} />
               </div>
 
-              <p className="mt-4 text-sm font-medium tracking-wide text-muted uppercase">
-                Audience: <span className="font-normal normal-case text-foreground">{workflow.audience}</span>
+              <p className="mt-4 text-xs font-medium tracking-[0.16em] text-muted uppercase">
+                Audience: <span className="font-normal normal-case tracking-normal text-foreground">{workflow.audience}</span>
               </p>
 
               <ol className="mt-8 space-y-6 border-l border-border-subtle pl-6">
                 {workflow.steps.map((step, i) => (
                   <li key={step.title}>
-                    <p className="font-serif text-lg text-foreground">
+                    <p className="text-base font-semibold tracking-[-0.01em] text-foreground">
                       {i + 1}. {step.title}
                     </p>
-                    <p className="mt-1 text-sm leading-relaxed text-muted">{step.detail}</p>
+                    <p className="mt-1 text-[0.9375rem] leading-relaxed text-foreground-soft">{step.detail}</p>
                   </li>
                 ))}
               </ol>
 
-              <div className="mt-8 rounded-lg border border-border-subtle bg-surface p-6">
-                <p className="text-sm font-semibold tracking-wide text-foreground uppercase">
+              <div className="mt-8 rounded-md border border-border-subtle bg-surface p-6">
+                <p className="text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
                   Quality checks
                 </p>
-                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-muted">
+                <ul className="mt-3 space-y-2 text-[0.9375rem] leading-relaxed text-foreground-soft">
                   {workflow.qualityChecks.map((check) => (
                     <li key={check} className="flex gap-2">
                       <span className="text-accent">—</span>

@@ -19,21 +19,21 @@ export function ContentCard({
   children?: ReactNode;
 }) {
   return (
-    <article className="rounded-lg border border-border-subtle bg-surface p-6 sm:p-8">
+    <article className="rounded-md border border-border-subtle bg-surface p-6 sm:p-8">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           {meta && (
-            <p className="mb-1 text-xs font-medium tracking-[0.2em] text-muted uppercase">
+            <p className="mb-1.5 text-xs font-medium tracking-[0.16em] text-muted uppercase">
               {meta}
             </p>
           )}
-          <h3 className="font-serif text-xl text-foreground sm:text-2xl">
+          <h3 className="text-lg font-semibold tracking-[-0.01em] text-foreground">
             {title}
           </h3>
         </div>
         {status && <StatusBadge status={status} />}
       </div>
-      <p className="mt-4 text-sm leading-relaxed text-muted">{description}</p>
+      <p className="mt-3 text-[0.9375rem] leading-relaxed text-foreground-soft">{description}</p>
       {children}
       {tags && tags.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-2">

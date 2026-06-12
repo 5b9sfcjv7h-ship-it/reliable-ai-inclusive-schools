@@ -16,11 +16,11 @@ export function CalloutPanel({
   variant?: keyof typeof VARIANT_STYLES;
 }) {
   return (
-    <div className={`rounded-lg border p-6 ${VARIANT_STYLES[variant]}`}>
-      <p className="text-sm font-semibold tracking-wide text-foreground uppercase">
+    <div className={`rounded-md border p-6 ${VARIANT_STYLES[variant]}`}>
+      <p className="text-xs font-semibold tracking-[0.16em] text-foreground uppercase">
         {title}
       </p>
-      <div className="mt-3 text-sm leading-relaxed text-muted">{children}</div>
+      <div className="mt-3 text-[0.9375rem] leading-relaxed text-foreground-soft">{children}</div>
     </div>
   );
 }

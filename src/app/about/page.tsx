@@ -14,7 +14,7 @@ export default function AboutPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Purpose" title="Why this hub exists" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             This site makes the research process visible as it develops. That
             includes the problem framing, the literature and frameworks in
             use, the workflows being tested, and the field notes that inform
@@ -29,7 +29,7 @@ export default function AboutPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Approach" title="How this research is being conducted" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             The work follows a design-based research approach: cycles of
             design, trial, observation, and revision with participating
             schools and staff. It draws on established frameworks, including
@@ -44,7 +44,7 @@ export default function AboutPage() {
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Status of content" title="How to read this hub" />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Content across this hub is marked with a status:{" "}
             <span className="text-foreground">draft</span>,{" "}
             <span className="text-foreground">developing</span>,{" "}
@@ -62,7 +62,7 @@ export default function AboutPage() {
             eyebrow="Workspace vs. Hub"
             title="A private research workspace, for now"
           />
-          <p className="mt-6 text-base leading-relaxed text-muted">
+          <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             This site is currently a private research workspace. It exists so
             the structure of the work, problem framing, literature,
             frameworks, workflows, and field notes, can be drafted, tested,
@@ -70,7 +70,7 @@ export default function AboutPage() {
             appears here is provisional. Some material is recorded only for
             internal use during the pilot.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-muted">
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             A future public-facing version of this hub will present a curated
             subset of this work: material marked{" "}
             <span className="text-foreground">integrated</span> or{" "}

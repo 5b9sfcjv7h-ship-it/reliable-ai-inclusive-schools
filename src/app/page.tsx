@@ -105,14 +105,14 @@ export default function Home() {
 
       <section className="border-b border-border-subtle py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="text-sm font-medium tracking-[0.2em] text-accent uppercase">
+          <p className="text-xs font-medium tracking-[0.16em] text-accent uppercase">
             Working Question
           </p>
-          <p className="mt-4 font-serif text-2xl leading-snug text-foreground sm:text-3xl">
+          <p className="mt-4 font-serif text-2xl leading-snug font-medium tracking-[-0.01em] text-balance text-foreground sm:text-3xl">
             How can schools move from casual AI use to reliable
             AI-supported inclusive practice?
           </p>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
+          <p className="mt-6 max-w-2xl text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Schools are being told to use AI responsibly. The harder problem
             is turning those principles into daily routines teachers can
             actually use, and that leaders can quality assure. Most current
@@ -149,14 +149,14 @@ export default function Home() {
             title="From principles to inclusive practice"
             description="The hub is organised around this chain. Each stage depends on the one before it, rather than replacing it."
           />
-          <ol className="mt-10 grid gap-px overflow-hidden rounded-lg border border-border-subtle bg-border-subtle sm:grid-cols-5">
+          <ol className="mt-10 grid gap-px overflow-hidden rounded-md border border-border-subtle bg-border-subtle sm:grid-cols-5">
             {LOGIC_STEPS.map((step, i) => (
               <li key={step.title} className="flex flex-col gap-2 bg-surface p-5">
-                <span className="text-xs font-medium tracking-[0.2em] text-accent uppercase">
+                <span className="text-xs font-medium tracking-[0.16em] text-accent uppercase">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="font-serif text-lg text-foreground">{step.title}</span>
-                <span className="text-sm leading-relaxed text-muted">{step.description}</span>
+                <span className="text-base font-semibold tracking-[-0.01em] text-foreground">{step.title}</span>
+                <span className="text-sm leading-relaxed text-foreground-soft">{step.description}</span>
               </li>
             ))}
           </ol>

@@ -15,8 +15,8 @@ export default function GlossaryPage() {
         <div className="mx-auto max-w-3xl divide-y divide-border-subtle px-6">
           {glossaryTerms.map((item) => (
             <div key={item.term} className="py-6 first:pt-0">
-              <h3 className="font-serif text-xl text-foreground">{item.term}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{item.definition}</p>
+              <h3 className="text-base font-semibold tracking-[-0.01em] text-foreground">{item.term}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-foreground-soft">{item.definition}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {item.tags.map((tag) => (
                   <TagPill key={tag} label={tag} />

@@ -18,16 +18,16 @@ export default function FieldNotesPage() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="text-base leading-relaxed text-foreground">
+          <p className="text-[1.0625rem] leading-[1.8] font-medium text-foreground">
             Field notes are currently under review.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-muted">
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             This section will publish selected, de-identified observations
             from early workflow trials and implementation discussions. Each
             entry will be reviewed for privacy, confidentiality, and public
             relevance before release.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-muted">
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
             Target release window: Q4 2026.
           </p>
         </div>

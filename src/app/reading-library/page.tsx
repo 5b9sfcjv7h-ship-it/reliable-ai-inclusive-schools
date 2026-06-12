@@ -33,7 +33,7 @@ export default function ReadingLibraryPage() {
               tags={reading.tags}
               status={reading.status}
             >
-              <p className="mt-4 border-t border-border-subtle pt-4 text-sm leading-relaxed text-foreground">
+              <p className="mt-4 border-t border-border-subtle pt-4 text-[0.9375rem] leading-relaxed text-foreground">
                 <span className="font-medium">Relevance: </span>
                 {reading.relevance}
               </p>
@@ -67,7 +67,7 @@ export default function ReadingLibraryPage() {
                 tags={reading.tags}
                 status={reading.status}
               >
-                <p className="mt-4 border-t border-border-subtle pt-4 text-sm leading-relaxed text-foreground">
+                <p className="mt-4 border-t border-border-subtle pt-4 text-[0.9375rem] leading-relaxed text-foreground">
                   <span className="font-medium">Relevance: </span>
                   {reading.relevance}
                 </p>
