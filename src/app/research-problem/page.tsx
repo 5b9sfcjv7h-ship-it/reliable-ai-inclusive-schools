@@ -18,13 +18,13 @@ export default function ResearchProblemPage() {
             Generative AI tools are already widely used in schools, but mostly
             in an informal, individual, and unreviewed way. Teachers and
             support staff use general-purpose chat tools to draft resources,
-            plan lessons, or generate ideas, often without a shared workflow,
-            a quality check, or any record of what was produced and how it was
-            verified. This is an understandable response to genuinely useful,
-            accessible tools. But it leaves schools with no consistent basis
-            for judging whether AI-assisted work meets the standards expected
-            of professional practice, and no way to account for that work if
-            it is ever questioned.
+            plan lessons, or generate ideas. Most do this without a shared
+            workflow, a quality check, or any record of what was produced and
+            how it was checked. That is an understandable response to tools
+            that are genuinely useful and easy to access. But it leaves
+            schools with no consistent basis for judging whether AI-assisted
+            work meets professional standards, and no way to account for that
+            work if it is ever questioned.
           </p>
         </div>
       </section>
@@ -33,14 +33,14 @@ export default function ResearchProblemPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="02" title="Why it matters now" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            The window in which schools can shape how generative AI is used is
+            The window for shaping how generative AI is used in schools is
             narrow. Practice is forming quickly, often ahead of policy,
-            training, or shared standards, and the habits formed now will be
-            costly to unwind later. If reliable, inclusive workflows are not
-            set out and trialled while practice is still forming, informal
-            habits will harden into default practice, including habits that
-            may quietly disadvantage students who are already at risk of being
-            underserved by general-purpose tools and resources.
+            training, or shared standards. Habits formed now will be costly to
+            unwind later. If reliable, inclusive workflows are not set out and
+            tested while practice is still forming, informal habits will
+            harden into default practice. Some of those habits may quietly
+            disadvantage students who are already underserved by
+            general-purpose tools and resources.
           </p>
         </div>
       </section>
@@ -49,16 +49,15 @@ export default function ResearchProblemPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="03" title="Why inclusive education is the right lens" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            Inclusive education provides a demanding test for any new
-            classroom technology: does it work for the full range of
-            learners, including those with disability, additional learning
-            needs, or complex communication needs, or only for an assumed
-            "average" student? Frameworks such as Universal Design for
-            Learning already give schools a vocabulary for evaluating
-            curriculum design on this basis. Applying the same lens to
-            AI-supported practice keeps the focus on whether barriers are
-            being removed for real students, rather than on the novelty of
-            the technology itself.
+            Inclusive education sets a demanding test for any new classroom
+            technology. Does it work for the full range of learners,
+            including students with disability, additional learning needs, or
+            complex communication needs? Or only for an assumed "average"
+            student? Frameworks such as Universal Design for Learning already
+            give schools a vocabulary for evaluating curriculum design on this
+            basis. Applying the same lens to AI-supported practice keeps the
+            focus on real students and real barriers, not on the novelty of
+            the technology.
           </p>
         </div>
       </section>
@@ -133,18 +132,18 @@ export default function ResearchProblemPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="07" title="Possible contribution" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            This research aims to produce a small set of trialled, documented
+            This research aims to produce a small set of tested, documented
             workflows covering curriculum adaptation, AAC vocabulary planning,
             accessible resource review, AI output quality assurance, and
-            privacy and risk checking. Each comes with an account of how it
-            was developed, what changed through trial and revision, and what
-            it took to embed in practice, including the time, training, and
-            oversight required. For school leaders, that record is the basis
-            for a sound implementation decision: what a workflow costs to run,
-            what it returns in staff time and consistency, and what
-            governance needs to be in place before it is adopted. For the
-            wider field, it is intended as a grounded contribution to the
-            conversation about responsible AI adoption in education.
+            privacy and risk checking. Each comes with a record of how it was
+            developed, what changed through trial and revision, and what it
+            took to embed in practice: the time, training, and oversight
+            required. For school leaders, that record supports a sound
+            implementation decision. What does the workflow cost to run? What
+            does it return in staff time and consistency? What governance
+            needs to be in place before adoption? For the wider field, it is
+            intended as a grounded contribution to the conversation about
+            responsible AI adoption in education.
           </p>
         </div>
       </section>

@@ -20,7 +20,9 @@ export default function FieldNotesPage() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-3xl space-y-6 px-6">
-          {fieldNotes.map((note) => (
+          {fieldNotes
+            .filter((note) => note.visibility === "public-safe")
+            .map((note) => (
             <ContentCard
               key={note.slug}
               title={note.title}
@@ -40,7 +42,7 @@ export default function FieldNotesPage() {
                 </p>
               </div>
             </ContentCard>
-          ))}
+            ))}
         </div>
       </section>
     </>

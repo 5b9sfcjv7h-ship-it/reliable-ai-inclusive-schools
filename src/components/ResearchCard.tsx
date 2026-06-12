@@ -22,7 +22,7 @@ export function ResearchCard({
       <p className="mt-3 text-sm leading-relaxed text-muted">{description}</p>
       {href && (
         <span className="mt-4 text-sm font-medium text-accent">
-          Explore &rarr;
+          View &rarr;
         </span>
       )}
     </div>

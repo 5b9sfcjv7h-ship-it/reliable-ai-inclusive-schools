@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Reliable AI for Inclusive Schools",
   description:
-    "A research hub exploring how schools can move from casual generative AI use toward reliable, ethical, inclusive, and quality-assured AI-supported practice.",
+    "A research hub on moving schools from casual generative AI use to reliable, inclusive, quality-assured AI-supported practice.",
 };
 
 export default function RootLayout({
@@ -24,8 +24,8 @@ export default function RootLayout({
           Skip to content
         </a>
         <div className="border-b border-border-subtle bg-foreground/[0.03] py-2 text-center text-xs text-muted">
-          Private research workspace &mdash; working draft, not yet prepared
-          for public distribution
+          Private research workspace: working draft, not yet prepared for
+          public distribution
         </div>
         <Navigation />
         <main id="main-content" className="flex-1">

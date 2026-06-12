@@ -50,14 +50,13 @@ export default function PilotStudyPage() {
         <div className="mx-auto max-w-3xl px-6">
           <SectionHeader eyebrow="Approach" title="Design-based research, in cycles" />
           <p className="mt-6 text-base leading-relaxed text-muted">
-            Rather than testing a fixed workflow once, this pilot study works
-            in short cycles: a workflow is drafted, a small number of staff
-            trial it in an authentic planning context, observations are
-            recorded as field notes, and the workflow is revised before the
-            next cycle. This approach suits a problem where the right level
-            of structure is not yet known and needs to be discovered through
-            use: enough to support quality and inclusion, without adding
-            workload that staff cannot sustain.
+            Rather than testing a fixed workflow once, this pilot works in
+            short cycles. A workflow is drafted. A small number of staff trial
+            it in real planning. Observations are recorded as field notes.
+            The workflow is revised before the next cycle. This suits a
+            problem where the right level of structure is not yet known and
+            has to be found through use: enough to support quality and
+            inclusion, without adding workload staff cannot sustain.
           </p>
         </div>
       </section>

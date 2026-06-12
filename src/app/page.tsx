@@ -78,7 +78,7 @@ const SECTION_LINKS = [
   {
     title: "Pilot Study",
     description:
-      "The design and status of the pilot study exploring these workflows in practice.",
+      "The design and status of the pilot study testing these workflows in practice.",
     href: "/pilot-study",
   },
   {
@@ -100,7 +100,7 @@ export default function Home() {
       <Hero
         eyebrow="Research Hub"
         title="Reliable AI for Inclusive Schools"
-        subtitle="A research hub exploring how schools can move from casual generative AI use toward reliable, ethical, inclusive, and quality-assured AI-supported practice."
+        subtitle="AI is now part of everyday school practice. This hub sets out how to make that practice reliable, inclusive, and quality-assured, and what it takes to implement it well."
       />
 
       <section className="border-b border-border-subtle py-16 sm:py-24">
@@ -113,15 +113,14 @@ export default function Home() {
             AI-supported inclusive practice?
           </p>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted">
-            Generative AI is already part of everyday school life, but mostly
-            as an individual habit rather than a professional practice. That
-            gap carries a cost: time spent reworking unreliable output,
-            inconsistent quality across classrooms, and decisions about
-            students made without a clear record of how AI was involved. This
-            research starts from that gap. It sets out what changes when AI
-            use moves from informal habit toward workflows that are
-            structured, quality-assured, and tested against whether they
-            support inclusive teaching.
+            Generative AI is already part of everyday school life. But it is
+            mostly an individual habit, not a professional practice. That gap
+            has a cost. Staff rework unreliable output. Quality varies between
+            classrooms. Decisions affecting students get made with no clear
+            record of how AI was involved. This research starts from that
+            gap. It sets out what changes when AI use moves from informal
+            habit to workflows that are structured, quality-assured, and
+            tested against inclusive teaching standards.
           </p>
         </div>
       </section>
@@ -131,7 +130,7 @@ export default function Home() {
           <SectionHeader
             eyebrow="The Problem"
             title="Three gaps casual use leaves open"
-            description="Each gap below shapes the research questions and workflows explored across this hub."
+            description="Each gap below shapes the workflows and questions covered in this hub."
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             {PROBLEM_CARDS.map((card) => (
@@ -164,7 +163,7 @@ export default function Home() {
 
       <section className="border-b border-border-subtle py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-6">
-          <SectionHeader eyebrow="Explore" title="Sections of this hub" />
+          <SectionHeader eyebrow="Contents" title="Sections of this hub" />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {SECTION_LINKS.map((section) => (
               <ResearchCard

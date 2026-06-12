@@ -21,9 +21,8 @@ export function Footer() {
               Reliable AI for Inclusive Schools
             </p>
             <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">
-              A research hub exploring how schools can move from casual
-              generative AI use toward reliable, ethical, inclusive, and
-              quality-assured AI-supported practice.
+              Practical research on moving schools from casual AI use to
+              reliable, inclusive, quality-assured AI-supported practice.
             </p>
           </div>
           <nav aria-label="Footer">
