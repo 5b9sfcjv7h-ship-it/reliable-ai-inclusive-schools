@@ -1,18 +1,22 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 export function ResearchCard({
   title,
   description,
   href,
   meta,
+  icon,
 }: {
   title: string;
   description: string;
   href?: string;
   meta?: string;
+  icon?: ReactNode;
 }) {
   const content = (
     <div className="flex h-full flex-col rounded-md border border-border-subtle bg-surface p-6 transition-colors group-hover:border-accent/50">
+      {icon && <span className="mb-4 text-accent">{icon}</span>}
       {meta && (
         <p className="mb-2 text-xs font-medium tracking-[0.16em] text-muted uppercase">
           {meta}

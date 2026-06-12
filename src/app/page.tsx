@@ -4,22 +4,35 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { ResearchCard } from "@/components/ResearchCard";
 import { ResearchLogicDiagram } from "@/components/ResearchLogicDiagram";
 import { SafetyNotice } from "@/components/SafetyNotice";
+import {
+  IconClipboardCheck,
+  IconCompass,
+  IconLandmark,
+  IconPeople,
+  IconRoute,
+  IconScaleUnbalanced,
+  IconShieldDashed,
+  IconVariance,
+} from "@/components/icons";
 
 const PROBLEM_CARDS = [
   {
     title: "Inconsistency",
     description:
       "AI use varies between staff, classes, and tasks, with no shared workflow and no way to compare what is working.",
+    icon: <IconVariance className="h-6 w-6" />,
   },
   {
     title: "Inequity",
     description:
       "Without an inclusion lens, AI-assisted adaptations risk widening the gaps for students with additional needs instead of closing them.",
+    icon: <IconScaleUnbalanced className="h-6 w-6" />,
   },
   {
     title: "Governance Gap",
     description:
       "Most schools have no clear, shared guidance on privacy, risk, and quality assurance for generative AI use.",
+    icon: <IconShieldDashed className="h-6 w-6" />,
   },
 ];
 
@@ -27,22 +40,27 @@ const LOGIC_STEPS = [
   {
     title: "Responsible AI Principles",
     description: "National and international guidance on safe, ethical, and responsible AI use.",
+    icon: <IconCompass />,
   },
   {
     title: "School Governance",
     description: "Local policy, approved tools, privacy rules, and risk settings that apply those principles in a school.",
+    icon: <IconLandmark />,
   },
   {
     title: "Teacher Workflows",
     description: "Defined steps for common tasks, with a clear point of professional review.",
+    icon: <IconRoute />,
   },
   {
     title: "Quality Assurance",
     description: "Output is checked for accuracy, alignment, and tone before use.",
+    icon: <IconClipboardCheck />,
   },
   {
     title: "Inclusive Practice",
     description: "Workflows are evaluated against an explicit inclusion lens for students with disability and complex needs.",
+    icon: <IconPeople />,
   },
 ];
 
@@ -169,7 +187,12 @@ export default function Home() {
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             {PROBLEM_CARDS.map((card) => (
-              <ResearchCard key={card.title} title={card.title} description={card.description} />
+              <ResearchCard
+                key={card.title}
+                title={card.title}
+                description={card.description}
+                icon={card.icon}
+              />
             ))}
           </div>
         </div>

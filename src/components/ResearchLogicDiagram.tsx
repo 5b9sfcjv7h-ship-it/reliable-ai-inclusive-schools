@@ -1,28 +1,35 @@
+import type { ReactNode } from "react";
+
 export function ResearchLogicDiagram({
   steps,
 }: {
-  steps: { title: string; description: string }[];
+  steps: { title: string; description: string; icon?: ReactNode }[];
 }) {
   return (
     <ol className="mt-12 flex flex-col sm:flex-row">
       {steps.map((step, i) => {
         const last = i === steps.length - 1;
+        const node = (
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-accent/60 bg-surface text-accent">
+            {step.icon ?? (
+              <span className="text-xs font-medium">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+            )}
+          </span>
+        );
         return (
           <li
             key={step.title}
             className="flex gap-5 sm:flex-1 sm:flex-col sm:gap-0"
           >
             <div aria-hidden="true" className="flex flex-col items-center sm:hidden">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-accent/60 bg-surface text-xs font-medium text-accent">
-                {String(i + 1).padStart(2, "0")}
-              </span>
+              {node}
               {!last && <span className="w-px flex-1 bg-accent/25" />}
             </div>
 
             <div aria-hidden="true" className="hidden sm:flex sm:items-center">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-accent/60 bg-surface text-xs font-medium text-accent">
-                {String(i + 1).padStart(2, "0")}
-              </span>
+              {node}
               {!last && (
                 <span className="flex flex-1 items-center pl-2 pr-3">
                   <span className="h-px flex-1 bg-accent/25" />
@@ -38,7 +45,13 @@ export function ResearchLogicDiagram({
             </div>
 
             <div className={`pb-10 sm:mt-4 sm:pb-0 ${last ? "" : "sm:pr-8"}`}>
-              <p className="text-base font-semibold tracking-[-0.01em] text-foreground">
+              <p
+                aria-hidden="true"
+                className="text-[11px] font-medium tracking-[0.16em] text-muted"
+              >
+                {String(i + 1).padStart(2, "0")}
+              </p>
+              <p className="mt-1 text-base font-semibold tracking-[-0.01em] text-foreground">
                 {step.title}
               </p>
               <p className="mt-1.5 text-sm leading-relaxed text-foreground-soft">
