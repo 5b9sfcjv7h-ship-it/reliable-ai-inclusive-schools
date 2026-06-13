@@ -32,7 +32,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-10 sm:grid-cols-2">
           <div>
-            <p className="font-serif text-lg font-medium text-foreground">
+            <p className="font-sans text-lg font-medium tracking-normal text-foreground">
               Reliable AI for Inclusive Schools
             </p>
             <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted">

@@ -18,8 +18,7 @@
   --color-border-subtle: var(--border-subtle);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --font-serif: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -36,16 +35,15 @@ html.rs-space :is(p, li, dd) {
   line-height: 1.95;
 }
 
-/* Reading support: optional dyslexia-friendly typeface for running text.
-   Serif display headings keep their explicit font-family. */
+/* Reading support: optional dyslexia-friendly typeface for running text. */
 html.rs-dyslexic body {
-  font-family: var(--font-opendyslexic), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-opendyslexic), var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

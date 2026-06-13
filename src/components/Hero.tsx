@@ -19,7 +19,7 @@ export function Hero({
             {eyebrow}
           </p>
         )}
-        <h1 className="max-w-3xl font-serif text-4xl leading-[1.15] tracking-[-0.015em] text-balance text-foreground sm:text-5xl sm:leading-[1.1] lg:text-6xl">
+        <h1 className="max-w-3xl font-sans text-4xl leading-[1.05] font-medium tracking-normal text-balance text-foreground sm:text-5xl sm:leading-[1.02] lg:text-6xl lg:leading-[1]">
           {title}
         </h1>
         {subtitle && (

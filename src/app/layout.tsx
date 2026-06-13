@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
@@ -9,13 +9,6 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-});
-
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  variable: "--font-newsreader",
-  display: "swap",
-  axes: ["opsz"],
 });
 
 // Optional reading support. SIL OFL licensed (see src/fonts/OFL.txt).
@@ -44,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${newsreader.variable} ${openDyslexic.variable}`}
+      className={`${inter.variable} ${openDyslexic.variable}`}
     >
       <body className="flex min-h-screen flex-col antialiased">
         <a

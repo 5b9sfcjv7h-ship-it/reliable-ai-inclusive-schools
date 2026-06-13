@@ -40,7 +40,7 @@ export function Navigation() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-10 px-6 py-4">
         <Link
           href="/"
-          className="shrink-0 font-serif text-base font-medium text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="shrink-0 font-sans text-base font-medium tracking-normal text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           Reliable AI for Inclusive Schools
         </Link>

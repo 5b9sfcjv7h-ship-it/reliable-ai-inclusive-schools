@@ -159,7 +159,7 @@ export default function Home() {
           <p className="text-xs font-medium tracking-[0.16em] text-accent uppercase">
             Working Question
           </p>
-          <p className="mt-4 font-serif text-2xl leading-snug font-medium tracking-[-0.01em] text-balance text-foreground sm:text-3xl">
+          <p className="mt-4 font-sans text-2xl leading-[1.08] font-medium tracking-normal text-balance text-foreground sm:text-3xl sm:leading-[1.05]">
             How can schools move from casual AI use to reliable
             AI-supported inclusive practice?
           </p>
