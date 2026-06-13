@@ -29,20 +29,35 @@ export default function AboutPage() {
 
       <section className="border-b border-border-subtle py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-6">
-          <SectionHeader eyebrow="Provenance" title="Who is behind this work" />
+          <SectionHeader eyebrow="POSITIONING THIS WORK" title="Where this work comes from" />
           <p className="mt-6 text-[1.0625rem] leading-[1.8] text-foreground-soft">
-            This hub is developed and maintained by a Queensland-based special
-            education teacher and curriculum leader, as part of a developing
-            PhD pathway. The work is grounded in day-to-day practice:
-            designing curriculum, adjustments, and communication supports for
-            students with disability and complex learning needs, and leading
-            staff through the practical questions AI raises in that work.
+            This hub has been developed by an educator working in the
+            Queensland special education context.
           </p>
           <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
-            The focus is deliberately narrow: teacher-facing AI workflows for
-            inclusive practice, and the governance and quality assurance that
-            make them reliable. Claims made here are limited to what that
-            experience and the cited literature can support.
+            It began as a practical exploration of how AI can support
+            inclusive education, teacher workflow, curriculum access, and
+            accessible design. It also reflects a broader shift: increasingly
+            capable AI tools are changing what individual practitioners can
+            research, build, test, and publish without specialist technical
+            teams.
+          </p>
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
+            The site was developed in approximately three days using a
+            human-AI workflow. ChatGPT supported research synthesis, planning,
+            writing, and critique. Claude Code, using Fable 5, supported
+            development and coding alongside VS Code. Much of the process
+            involved describing problems clearly, using screenshots as context,
+            asking targeted questions, and iterating quickly.
+          </p>
+          <p className="mt-4 text-[1.0625rem] leading-[1.8] text-foreground-soft">
+            That process is relevant to the work itself. It demonstrates how
+            AI can expand the practical capability of educators when used with
+            judgement, curiosity, and clear intent. The central question is
+            how schools move from informal AI adoption to reliable
+            AI-supported inclusive practice, where tools are used with clear
+            purpose, appropriate safeguards, and a focus on improving access
+            for students with disability and complex learning needs.
           </p>
           <div className="mt-8">
             <CalloutPanel title="What this site is not">
